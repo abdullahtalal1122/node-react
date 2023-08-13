@@ -53,7 +53,9 @@ const Signup = () => {
             <a href="#">Already have an account?</a>
           </p>
         </div>
-        <button type="submit">Register</button>
+        <button className="button" type="submit">
+          Register
+        </button>
       </form>
     </div>
   );

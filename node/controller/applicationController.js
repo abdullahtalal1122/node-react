@@ -1,5 +1,5 @@
 const home = (req, res) => {
-  res.json("You have recived the secrets");
+  res.json({ massege: "You have recived the secrets" });
 };
 
 export { home };
