@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-
+import Signupform from "./Signupform";
 const Signup = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -33,30 +33,12 @@ const Signup = () => {
       <div>
         <h1>Wanna Register?</h1>
       </div>
-      <form onSubmit={signinHandle} className="form">
-        <input
-          className="form-item"
-          type="email"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <input
-          className="form-item"
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <div className="text">
-          <p>
-            <a href="#">Already have an account?</a>
-          </p>
-        </div>
-        <button className="button" type="submit">
-          Register
-        </button>
-      </form>
+      <Signupform
+        email={email}
+        setEmail={setEmail}
+        password={setPassword}
+        signinHandle={signinHandle}
+      />
     </div>
   );
 };
