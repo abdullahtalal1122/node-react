@@ -56,9 +56,9 @@ Follow the provided registration and login functionality to explore the authenti
 
 ## API Endpoints
 
-| Endpoint           | Method | Description             |
-|--------------------|--------|-------------------------|
-| `/api/signup`      | POST   | User registration      |
-| `/api/login`       | POST   | User login             |
-| `/api/home`        | GET    | Access protected route |
+| Endpoint                | Method | Description             |
+|-------------------------|--------|-------------------------|
+| `/api/v1/register`      | POST   | User registration       |
+| `/api/v1/login`         | POST   | User login              |
+| `/api/v1/`              | GET    | Access protected route  |
 
